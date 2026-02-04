@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+.contenedor_header{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    padding: 40px;
+}
+.logo_header{
+    width: 220px;   
+}
+.nav_header{
+    display:flex;
+    /* text-decoration: none; */
+    gap: 30px;
+    align-items: center;
+}
+.nav_header a{
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 20px;
+}
+.button_header{
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
