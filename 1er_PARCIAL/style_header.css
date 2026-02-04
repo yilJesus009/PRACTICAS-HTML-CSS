@@ -1,16 +1,12 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding:0;
-}
+
 .contenedor_header{
     display: flex;
     justify-content: space-between;
     /* background-color: red; */
-    padding: 40px;
+    padding: 25px;
 }
 .logo_header{
-    width: 220px;   
+    width: 200px;   
 }
 .nav_header{
     display:flex;
