@@ -1,0 +1,105 @@
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; 
+    width: 50%;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+.class_header{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 100px;
+    background-color: #999;
+}
+.nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+    gap: 40px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #666;
+}
+.nav{
+    display: flex;
+    gap: 15px;
+}
+.section_hero{
+    margin-top: 30px;
+    /* padding: 0px 0px; */
+}
+.hero_titulo{
+    font-size: 18px;
+    text-align: center;
+}
+.section_form{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10px;
+    
+}
+.titulo_registrar{
+    /* border: 1px solid; */
+    /* box-shadow: 0px 2px 8px rgba(0,0,0,0.4); */
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.formulario{
+     box-shadow: 0px 2px 8px rgba(0,0,0,0.4);
+     padding: 10px;
+     border-radius: 10px;
+}
+.submit_registrar{
+    margin-top: 10px;
+     background-color: #189ec4;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    background-color: #189ec4;
+    border-radius: 5px;
+}
+.label_form{
+    font-size: 17px;
+    color: #333;
+    font-style: italic;
+    font-weight: bold
+}
+.input_form{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.submit_enviar{
+    width: 100%;
+    padding: 8px 0px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    background-color: #189ec4;
+    border-radius: 5px;
+
+}
+
+.footer{
+   background-color: #999;
+   display: flex;
+   justify-content: space-between;
+   padding: 0px 60px;
+   
+}
