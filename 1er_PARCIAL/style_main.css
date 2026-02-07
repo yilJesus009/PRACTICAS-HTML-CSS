@@ -1,11 +1,64 @@
 .section_bienvenida{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #dcdaff;
+    /* align-items: center; */
+    background: linear-gradient( #dcdaff,white);
+
 }
 .imagen_bienvenida{
     width: 500px;
     margin-top: 120px;
-    
+}
+.section_article{
+    margin: 20px;
+    display: block;
+    align-content: column;
+   
+}
+.welcome_section{
+    color: #615bca;
+    margin-top: 120px;
+      text-align: start;
+}
+.info_article{
+    margin-top: 40px;
+    font-size: 56px;
+     text-align: start;
+}
+.article_parrafo{
+     text-align: start;
+     margin-top: 40px;
+     color: #9c9ba6;
+     font-size: 24px;
+     line-height: 1.5;
+}
+.div_article{
+    display: flex;
+    align-items: baseline;
+    gap: 80px;
+}
+.boton_consulta{
+    margin-top: 80px;
+    padding: 20px 50px;
+    border-radius: 8px;
+    background-color: #6c63ff;
+    border: none;
+    color: wheat;
+    font-size: 18px;
+}
+.div_article > a {
+    color: #6c63ff;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #999;
+}
+
+/* =========================================================== */
+
+.section2{
+    display: flex;
+    justify-content: center;
+}
+.article_section2{
+    display: grid;
 }
