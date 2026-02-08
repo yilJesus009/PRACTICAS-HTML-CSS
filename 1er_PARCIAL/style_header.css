@@ -29,3 +29,19 @@
     font-size: 18px;
     /* font-weight: bold; */
 }
+a:hover{
+    border-bottom: 1px solid #6c63ff;
+    line-height: 1.8;
+}
+.icon_header > svg{
+    width: 30px;  
+    height: 25px;
+    color: #615bca;
+}
+.icon_header,.button_header:hover{
+    cursor: pointer;
+    
+}
+.button_header:hover{
+    background-color: #4D41FB;
+}
