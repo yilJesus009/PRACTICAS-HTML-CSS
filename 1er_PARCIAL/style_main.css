@@ -280,3 +280,16 @@
 } */
 
 /* SECTION7=========================================================== */
+
+.section7{
+    display: block;
+}
+.section7_2{
+    display: flex;
+    justify-content: space-around;
+}
+.section7_cardimg{
+     width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
