@@ -2,23 +2,25 @@
 .section_bienvenida{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     background: linear-gradient( #dcdaff,white);
     margin-bottom: 130px;
+    flex-wrap: nowrap;
 }
 .imagen_bienvenida{
     width: 500px;
-    margin-top: 120px;
+    margin-top: 240px;
+    flex-shrink: 0;
 }
 .section_article{
     margin: 20px;
     display: block;
-    align-content: column;
+    flex-shrink: 1;
+    min-width: 350px;
    
 }
 .welcome_section{
     color: #615bca;
-    margin-top: 120px;
+    margin-top: 240px;
     text-align: start;
     font-size: 32px;
 }

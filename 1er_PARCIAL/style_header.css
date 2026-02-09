@@ -2,19 +2,20 @@
 .contenedor_header{
     display: flex;
     justify-content: space-between;
-    /* background-color: red; */
     padding: 25px;
     background-color: white;
+    gap: 30px;
     position: fixed;
     width: 100%;
     box-shadow: 0 2px 8px rgb(0,0,0,0.1);
+    flex-wrap: wrap;
 }
 .logo_header{
-    width: 200px;   
+    width: 200px; 
+    
 }
 .nav_header{
     display:flex;
-    /* text-decoration: none; */
     gap: 30px;
     align-items: center;
 }
@@ -23,6 +24,7 @@
     color: #666;
     font-weight: lighter;
     font-size: 20px;
+    white-space: nowrap;
 }
 .button_header{
     background-color: #6c63ff;
@@ -30,7 +32,8 @@
     padding: 12px 18px;
     border: none;
     border-radius: 7px;
-    font-size: 18px;
+    font-size: 15px;
+    white-space: nowrap;
     /* font-weight: bold; */
 }
 a:hover{
