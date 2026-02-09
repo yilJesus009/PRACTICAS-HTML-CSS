@@ -4,6 +4,10 @@
     justify-content: space-between;
     /* background-color: red; */
     padding: 25px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 8px rgb(0,0,0,0.1);
 }
 .logo_header{
     width: 200px;   
@@ -31,7 +35,7 @@
 }
 a:hover{
     border-bottom: 1px solid #6c63ff;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 .icon_header > svg{
     width: 30px;  
