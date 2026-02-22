@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #D6EDF8;
+  background-image: radial-gradient( circle,#B8D9EE 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+  
+  display: flex;
+  flex-direction: column;
+}
+main {
+  max-width: 1440px;     
+  margin: 0 auto; 
+}

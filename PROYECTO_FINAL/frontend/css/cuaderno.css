@@ -1,0 +1,48 @@
+.cuaderno__section{
+    display: block;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 13px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 0.85);    
+}
+.cuaderno__encabezado{
+    display: flex;
+    align-items: center;
+    background-color:#f4eee1;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom: 1px solid black;
+    /* justify-content: space-between; */
+}
+.cuaderno__bottom{
+    border-top-left-radius: 12px;
+    padding: 10px 20px;
+    border: none;
+    background-color:#8cd4cb ;
+    cursor: pointer;
+}
+#list{
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+        cursor: pointer;
+
+}
+#list li{
+    background-color: #e7e1d5;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.5);    
+}
+.lista :hover{
+    color: red;
+    box-shadow: none;
+}
+.cuaderno__elementos{
+    border-top: 1px solid black;
+    padding: 5px 10px;
+}
