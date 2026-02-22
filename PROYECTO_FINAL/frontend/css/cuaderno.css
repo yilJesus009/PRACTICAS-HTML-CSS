@@ -4,7 +4,8 @@
     border: 2px solid black;
     border-radius: 13px;
     background-color: #ffffff;
-    box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 0.85);    
+    box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 0.85); 
+    max-width: 500px;   
 }
 .cuaderno__encabezado{
     display: flex;
@@ -13,6 +14,7 @@
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
     border-bottom: 1px solid black;
+    margin-bottom: 15px;
     /* justify-content: space-between; */
 }
 .cuaderno__bottom{
@@ -22,27 +24,66 @@
     background-color:#8cd4cb ;
     cursor: pointer;
 }
-#list{
-    list-style: none;
-    padding: 20px;
-    margin: 0;
-        cursor: pointer;
-
+.motivational{
+    margin-left: 5px;
 }
-#list li{
+
+
+.list{
+    list-style: none;
+    padding:0px 15px;
+    margin: 0;
+    cursor: pointer;
+}
+.list__tarea{
+    display: flex;
+    align-items: center;
     background-color: #e7e1d5;
     border: 1px solid black;
-    cursor: pointer;
+    /* cursor: pointer; */
     border-radius: 12px;
     padding: 12px 16px;
     margin-bottom: 15px;
     box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.5);    
+    overflow-wrap: anywhere; 
+
 }
-.lista :hover{
-    color: red;
+.list li:hover {
     box-shadow: none;
 }
 .cuaderno__elementos{
     border-top: 1px solid black;
     padding: 5px 10px;
+}
+.list__eliminar{
+    margin-left: auto;
+}
+.list__check {  
+    margin-right: 5px;
+    appearance:none;
+    width: 20px;
+    height: 20px;
+    padding:8px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.list__check:hover{
+    background-color: #8cd4cb;
+    transition: 0.2s;
+}
+.list__eliminar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+}
+.list__eliminar:hover{
+background-color: #f6a89e;
 }
