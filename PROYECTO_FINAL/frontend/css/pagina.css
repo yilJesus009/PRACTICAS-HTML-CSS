@@ -13,6 +13,7 @@ body {
   flex-direction: column;
 }
 main {
-  /* max-width: 1440px;      */
-  margin: 0 auto; 
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }

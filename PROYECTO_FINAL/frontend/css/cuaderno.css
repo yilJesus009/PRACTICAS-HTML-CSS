@@ -5,7 +5,8 @@
     border-radius: 13px;
     background-color: #ffffff;
     box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 0.85); 
-    width: 100%;   
+    /* width: 100%;    */
+    flex: 3;
 }
 .cuaderno__encabezado{
     display: flex;
@@ -48,22 +49,22 @@
     overflow-wrap: anywhere; 
 
 }
-.list li:hover {
+.list__tarea:hover {
     box-shadow: none;
 }
 .cuaderno__elementos{
     border-top: 1px solid black;
     padding: 5px 10px;
 }
-.list__eliminar{
+/* .list__eliminar{
     margin-left: auto;
-}
+} */
 .list__check {  
     margin-right: 5px;
     appearance:none;
     width: 20px;
     height: 20px;
-    padding:8px;
+    /* padding:8px; */
     border: 1px solid #000;
     border-radius: 10px;
     cursor: pointer;
@@ -77,6 +78,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
     font-weight: bolder;
     padding: 5px;
     border-radius: 10px;

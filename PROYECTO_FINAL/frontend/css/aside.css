@@ -7,7 +7,8 @@
     
 }
 .aside__contenedor{
-    width: 20%;
+    /* width: 20%; */
+    flex: 1;
     border: 2px solid black;
     box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 0.85); 
     border-radius: 10px;
@@ -29,6 +30,6 @@
         background-color: #ffd6e9;
 
 }
-.aside__lista :hover{
+.aside__lista li:hover{
     background-color: #ffd6e9;
 }
