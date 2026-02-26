@@ -1,0 +1,6 @@
+#dependencias
+backend/node_modules/
+# Credenciales
+backend/.env
+# Backups 
+backend/backup.txt

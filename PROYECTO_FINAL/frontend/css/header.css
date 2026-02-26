@@ -7,3 +7,11 @@
 .header__imglogo{
     width: 250px;
 }
+@media (max-width: 768px) {
+    .header__contenedor {
+        margin: 10px;
+    }
+    .header__imglogo {
+        width: 150px;
+    }
+}

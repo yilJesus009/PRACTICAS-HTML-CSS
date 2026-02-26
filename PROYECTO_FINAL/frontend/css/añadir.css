@@ -30,3 +30,11 @@
     border-top-right-radius: 12px;
 }
 
+@media (max-width: 768px) {
+    .añadir__section {
+        margin: 0 15px;
+    }
+    .añadir__button {
+        padding: 20px 16px;
+    }
+}

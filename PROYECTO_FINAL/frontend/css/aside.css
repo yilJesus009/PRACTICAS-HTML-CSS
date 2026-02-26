@@ -33,3 +33,24 @@
 .aside__lista li:hover{
     background-color: #ffd6e9;
 }
+.aside__lista li:focus{
+    background-color: #ffd6e9;
+}
+
+@media (max-width: 768px) {
+    .prueba {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+
+    .aside__contenedor {
+        display: none; 
+    }
+
+    .cuaderno__section {
+        flex: none;
+        width: 100%;
+    }
+}
