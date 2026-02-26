@@ -92,3 +92,12 @@
     background-color: #f6a89e;
     box-shadow: 4px 4px 0px #000;
 }
+.list__tarea.completada {
+    background-color: #c8f7c5;
+    border: 1px solid #4caf50;
+}
+
+.list__tarea.completada .tarea__texto {
+    text-decoration: line-through;
+    color: #2e7d32;
+}
