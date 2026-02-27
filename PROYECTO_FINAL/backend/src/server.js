@@ -73,6 +73,23 @@ app.post("/api/todos", async (req, res) => {
 });
 
 
+//  la específica
+app.patch("/api/todos/marcar-todas", async (req,res) =>{
+  try {
+    await conexionBD.query(
+      "UPDATE tareas SET is_completada = true WHERE is_completada = false"
+    );
+
+    return respuestaExitosa(res, {
+      mensaje:"Todas las tareas fueron marcadas como hechas"
+    });
+
+  } catch (error) {
+    console.error(error);
+    return respuestaError(res,"Error al marcar todas las tareas");
+  }
+});
+
 app.patch("/api/todos/:id", async (req, res) => {
   try {
     const id = Number(req.params.id);
@@ -121,6 +138,9 @@ app.delete("/api/todos/:id", async (req, res) => {
     return respuestaError(res, "Error al eliminar tarea");
   }
 });
+
+
+
 
 app.listen(PUERTO, () => {
   console.log(`🚀 API corriendo en http://localhost:${PUERTO}`);

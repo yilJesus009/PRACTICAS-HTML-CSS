@@ -3,10 +3,13 @@ const API_URL = "http://localhost:3000/api/todos";
 const lista = document.querySelector(".list");
 const input = document.querySelector(".añadir__input");
 const boton = document.querySelector(".añadir__button");
+const botonMarcarTodas = document.querySelector(".cuaderno__bottom")
+const contadorPendientes= document.querySelector("#contadorPendientes");
 
-  //  INICIO
+  //  eventos
 document.addEventListener("DOMContentLoaded", iniciarApp);
 boton.addEventListener("click", crearTarea);
+botonMarcarTodas.addEventListener("click",marcarTodas)
 
 function iniciarApp() {
   cargarTareas();
@@ -21,13 +24,28 @@ async function cargarTareas() {
 
     lista.innerHTML = "";
 
+    let pendientes =0;
+
     datos.data.forEach((tarea) => {
       const elemento = crearElementoTarea(tarea);
       lista.appendChild(elemento);
+
+      if(!tarea.is_completada){
+        pendientes++;
+      }
     });
+    actualizarContador(pendientes);
 
   } catch (error) {
     console.error("Error al cargar tareas:", error);
+  }
+}
+
+function actualizarContador(cantidad){
+  if(cantidad === 1){
+    contadorPendientes.textContent="1 tarea pendiente"
+  }else{
+    contadorPendientes.textContent=`${cantidad} tareas pendientes`;
   }
 }
 
@@ -106,7 +124,20 @@ async function actualizarTarea(id, datos) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(datos),
     });
+    cargarTareas();
   } catch (error) {
     console.error("Error al actualizar:", error);
+  }
+}
+
+// BOTON QUE MARCA TODAS
+async function marcarTodas(){
+  try {
+    await fetch(`${API_URL}/marcar-todas`,{
+      method: "PATCH",
+    })
+    cargarTareas();
+  } catch (error) {
+    console.error("Error al marcar todas:",error);
   }
 }
