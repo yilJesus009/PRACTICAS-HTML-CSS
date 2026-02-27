@@ -9,6 +9,11 @@ const contadorPendientes= document.querySelector("#contadorPendientes");
   //  eventos
 document.addEventListener("DOMContentLoaded", iniciarApp);
 boton.addEventListener("click", crearTarea);
+input.addEventListener("keypress",(e)=>{
+  if(e.key === "Enter"){
+    crearTarea();
+  }
+})
 botonMarcarTodas.addEventListener("click",marcarTodas)
 
 function iniciarApp() {
